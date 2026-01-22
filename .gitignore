@@ -1,0 +1,10 @@
+/myvenv
+/venv
+
+# Large dataset files
+
+
+
+
+# Compressed dataset files
+*.gz
