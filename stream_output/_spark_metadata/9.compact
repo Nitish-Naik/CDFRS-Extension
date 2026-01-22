@@ -1,0 +1,11 @@
+v1
+{"path":"file:///app/stream_output/part-00000-ed4a8b0a-a068-4262-ac25-7bfafa7f73b9-c000.json","size":1557817,"isDir":false,"modificationTime":1769077500799,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///app/stream_output/part-00000-c28c4b52-52c6-429d-82c2-df64b941daf8-c000.json","size":678,"isDir":false,"modificationTime":1769078257401,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///app/stream_output/part-00000-3ba19136-70e5-4b3c-8f3f-18f014bc9d91-c000.json","size":379279,"isDir":false,"modificationTime":1769078290051,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///app/stream_output/part-00000-af731d52-152e-4a6e-ac04-b3e37a99ee6d-c000.json","size":113401,"isDir":false,"modificationTime":1769078300890,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///app/stream_output/part-00000-1bce9ac3-171e-42bb-9d0c-dda5cfa3af99-c000.json","size":69523,"isDir":false,"modificationTime":1769078309380,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///app/stream_output/part-00000-6065c780-8bad-460d-9c63-a819cd6631d0-c000.json","size":43994,"isDir":false,"modificationTime":1769078313407,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///app/stream_output/part-00000-91615ce0-5f4d-47ec-9008-21cd66aa9f6d-c000.json","size":27018,"isDir":false,"modificationTime":1769078319367,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///app/stream_output/part-00000-aa372c23-1573-4501-ac86-b77d93f1cadf-c000.json","size":39835,"isDir":false,"modificationTime":1769078324721,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///app/stream_output/part-00000-2a1dcb45-de5e-4517-9e06-200db9efdb94-c000.json","size":34433,"isDir":false,"modificationTime":1769078331730,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///app/stream_output/part-00000-ff43fc2e-0c64-4c68-bd51-5416991ceb0d-c000.json","size":48619,"isDir":false,"modificationTime":1769078337158,"blockReplication":1,"blockSize":33554432,"action":"add"}
