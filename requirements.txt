@@ -1,3 +1,7 @@
 kafka-python
 pyspark
 numpy
+
+# synthetic-dataset libs
+pandas
+argparse
