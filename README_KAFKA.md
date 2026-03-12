@@ -5,7 +5,7 @@ This setup provides a Kafka streaming service compatible with the HIGGS classifi
 ## components
 1. **Kafka (KRaft mode)**: A modern setup without Zookeeper using `bitnami/kafka`.
 2. **Kafka UI**: Web interface to view topics and messages at [http://localhost:8080](http://localhost:8080).
-3. **Producer**: `kafka_producer.py` generates synthetic HIGGS-like classification data.
+3. **Producer**: `kafka_producer_real.py` streams HIGGS classification data.
 4. **Consumer**: `kafka_spark_consumer.py` demonstrates reading the stream with PySpark.
 
 ## Prerequisites
@@ -32,10 +32,33 @@ docker-compose ps
 Wait a few seconds for Kafka to initialize. You can verify it's working by visiting [http://localhost:8080](http://localhost:8080) in your browser.
 
 ### 3. Start the Data Stream (Producer)
-Run the producer in a separate terminal. It will continuously send data to the `higgs_stream` topic.
+Run the producer in a separate terminal.
 ```bash
-python kafka_producer_real.py
+python kafka_producer_real.py --events-per-second 0
 ```
+
+Producer rate control:
+- `--events-per-second 0` sends at max throughput (default).
+- `--events-per-second 10000` caps the producer at 10k msg/sec.
+- `--target-gb <N>` streams until at least N GB payload is sent.
+
+Send at least 1 to 2 GB payload:
+- 1 GB:
+	`python kafka_producer_real.py --events-per-second 0 --target-gb 1`
+- 2 GB:
+	`python kafka_producer_real.py --events-per-second 0 --target-gb 2`
+
+### 3.1 Benchmark Maximum Throughput (Recommended)
+Use the benchmark helper to estimate your machine-specific Kafka limits:
+
+```bash
+python benchmark_kafka_throughput.py --auto-start
+```
+
+The script prints:
+- Practical max throughput (`acks=1`)
+- Raw peak throughput (`acks=0`)
+- A recommended producer cap to use with `kafka_producer_real.py`
 
 ### 4. Run the Spark Consumer
 
